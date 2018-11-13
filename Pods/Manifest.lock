@@ -1,0 +1,198 @@
+PODS:
+  - AeroGearHttp (2.0.0)
+  - AeroGearOAuth2 (2.0.0):
+    - AeroGearHttp (= 2.0.0)
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.1.0):
+    - Alamofire (~> 4.0)
+  - Eureka (2.0.1)
+  - Firebase (5.12.0):
+    - Firebase/Core (= 5.12.0)
+  - Firebase/Auth (5.12.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.5)
+  - Firebase/Core (5.12.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.3.0)
+  - Firebase/CoreOnly (5.12.0):
+    - FirebaseCore (= 5.1.7)
+  - Firebase/Crash (5.12.0):
+    - Firebase/Core
+    - FirebaseCrash (= 3.1.1)
+  - Firebase/Messaging (5.12.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.2.1)
+  - Firebase/RemoteConfig (5.12.0):
+    - Firebase/Core
+    - FirebaseRemoteConfig (= 3.1.0)
+  - FirebaseABTesting (2.0.0):
+    - FirebaseCore (~> 5.0)
+    - Protobuf (~> 3.5)
+  - FirebaseAnalytics (5.3.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (~> 5.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAnalyticsInterop (1.1.0)
+  - FirebaseAuth (5.0.5):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (5.1.7):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseCrash (3.1.1):
+    - FirebaseAnalytics (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - Protobuf (~> 3.5)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - FirebaseMessaging (3.2.1):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/Reachability (~> 5.2)
+    - Protobuf (~> 3.1)
+  - FirebaseRemoteConfig (3.1.0):
+    - FirebaseABTesting (~> 2.0)
+    - FirebaseAnalytics (~> 5.3)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleUtilities/Environment (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - Protobuf (~> 3.5)
+  - GoogleAppMeasurement (5.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.4):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.4)
+  - GoogleUtilities/Logger (5.3.4):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.4):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.4):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.4)"
+  - GoogleUtilities/Reachability (5.3.4):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.4):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - Player (0.12.1)
+  - Protobuf (3.6.1)
+  - Pulsator (0.5.1)
+  - SCLAlertView (0.8)
+  - SCLAlertView-Objective-C (1.1.6)
+  - SSZipArchive (2.1.4)
+  - SwiftForms (1.8.2)
+
+DEPENDENCIES:
+  - AeroGearOAuth2
+  - Alamofire
+  - AlamofireImage (= 3.1)
+  - Eureka (~> 2.0.0-beta.1)
+  - Firebase
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/Crash
+  - Firebase/Messaging
+  - Firebase/RemoteConfig
+  - Player
+  - Pulsator
+  - SCLAlertView
+  - SCLAlertView-Objective-C
+  - SSZipArchive
+  - SwiftForms
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AeroGearHttp
+    - AeroGearOAuth2
+    - Alamofire
+    - AlamofireImage
+    - Eureka
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCrash
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseRemoteConfig
+    - GoogleAppMeasurement
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - nanopb
+    - Player
+    - Protobuf
+    - Pulsator
+    - SCLAlertView
+    - SCLAlertView-Objective-C
+    - SSZipArchive
+    - SwiftForms
+
+SPEC CHECKSUMS:
+  AeroGearHttp: 65bf374aefd3521e1d8d33547e4db96047b745aa
+  AeroGearOAuth2: 759cd8f9a8bc0395021d21724cc8f8d0fac34eb6
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
+  Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
+  Firebase: 9190018e296139d938b99521cde0c15a6e8d2946
+  FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
+  FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
+  FirebaseAnalyticsInterop: e5f21be9af6548372e2f0815834ff909bff395a2
+  FirebaseAuth: 9299ab178271bec7426967b05b2718bb6fc31f17
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 027d350adc039aa5483357c6f56556f117c5170e
+  FirebaseCrash: fd373fbf5f9d1e235a984f2c7e446a5f26b968e8
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FirebaseMessaging: 0f14a264b0d7f867e8eff5d3556bc5d0d4e57888
+  FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
+  GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Player: ae8070a33c9360f5c93c247c00236b9489f62fca
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  Pulsator: f465ca37212d826523fe8c79b07c1a4c1a941f5e
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SCLAlertView-Objective-C: 2bb9be204bffaf24762a0e33fe6ca9645819b3b7
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+  SwiftForms: f0d4d30401e21de87d9b7b63a4691a3d4e22bab5
+
+PODFILE CHECKSUM: 852dc0ce3700c144b29b4de8faa2fd6f5ea8ecd3
+
+COCOAPODS: 1.5.3

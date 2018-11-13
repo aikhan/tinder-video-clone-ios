@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2657" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Location" representedClassName=".Location" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="location" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Match" representedClassName="Matched_User" syncable="YES">
+        <attribute name="matchedUserID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="match" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Messages" representedClassName=".Messages" syncable="YES">
+        <attribute name="creationDateTime" optional="YES" attributeType="Date" minDateTimeInterval="489783120" defaultDateTimeInterval="489783120" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromUserID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewed" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="message" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ageHigh" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ageLow" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="distanceOfSearch" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gifPicture1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="gifPicture2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="gifPicture3" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="gifPicture4" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="gifPicture5" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isLoggedInUser" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="likedArray" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lookingFor" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="matchedArray" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePicName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skippedArray" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userBucket" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userRealLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="location" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Location" inverseName="user" inverseEntity="Location" syncable="YES"/>
+        <relationship name="match" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Match" inverseName="user" inverseEntity="Match" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Messages" inverseName="user" inverseEntity="Messages" syncable="YES"/>
+        <relationship name="video" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Video" inverseName="user" inverseEntity="Video" syncable="YES"/>
+    </entity>
+    <entity name="Video" representedClassName=".Photo" syncable="YES">
+        <attribute name="localURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streamURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="video" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Location" positionX="-6554" positionY="-4755" width="128" height="133"/>
+        <element name="Match" positionX="-7031" positionY="-4617" width="128" height="88"/>
+        <element name="Messages" positionX="-6536" positionY="-4509" width="128" height="163"/>
+        <element name="User" positionX="-6858" positionY="-4698" width="128" height="510"/>
+        <element name="Video" positionX="-6869" positionY="-4867" width="128" height="103"/>
+    </elements>
+</model>
